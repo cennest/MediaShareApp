@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textlogId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/hello_world" />
+
+    <TextView
+        android:id="@+id/lblTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/messageTextViewId"
+        android:layout_alignParentLeft="true"
+        android:text="Message"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/messageTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="47dp"
+        android:layout_toRightOf="@+id/lblTextView"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnSendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="22dp"
+        android:text="Send" />
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSendMessage"
+        android:layout_alignLeft="@+id/btnSendMessage"
+        android:layout_marginBottom="15dp"
+        android:text="Connect" />
+
+    <Button
+        android:id="@+id/btnSetup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnConnect"
+        android:layout_alignLeft="@+id/textlogId"
+        android:layout_marginLeft="43dp"
+        android:text="Setup" />
+
+    <Button
+        android:id="@+id/btnSetupServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="49dp"
+        android:text="Setup Server" />
+
+    <Button
+        android:id="@+id/btnSetupClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSetupServer"
+        android:layout_alignBottom="@+id/btnSetupServer"
+        android:layout_alignLeft="@+id/btnSetup"
+        android:text="Setup Client" />
+
+</RelativeLayout>
